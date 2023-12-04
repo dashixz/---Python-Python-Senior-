@@ -12,4 +12,4 @@ cat3 = cats_life("Moonlight", "boy", 0, "Blue eyes with long, light-colored coat
 cat4 = cats_life("Shadow", "boy", 6, "Intelligent, kind, and companionable, with about 75 different color combinations ", "Maine Coon Cat")
 print("Our first cat breed is -", cat1.breed)
 print("Fourth cat have some interesting characteristics -", cat4.characteristics)
-print("Btw second cat have a really cute name -", cat2.characteristics)
+print("Btw second cat have a really cute name -", cat2.name)
