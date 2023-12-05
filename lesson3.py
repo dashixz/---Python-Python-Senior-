@@ -1,8 +1,8 @@
 
 import random
-class Ppl:
+class Human:
     def __init__(self,
-                 name = "Nn",
+                 name = "Human",
                  job = None,
                  home = None,
                  car = None):
@@ -13,10 +13,13 @@ class Ppl:
         self.job = job
         self.car = car
         self.home = home
+
     def get_home(self):
         pass
+
     def get_car(self):
-        pass
+        self.car = Auto(brands_of_car)
+
     def get_job(self):
         pass
     def eat(self):
@@ -29,7 +32,6 @@ class Ppl:
         pass
     def clean_home(self):
         pass
-
     def days_indexes(self, day):
         pass
     def is_alive(self):
@@ -38,22 +40,27 @@ class Ppl:
         pass
 
 class Auto:
-    def __init__(self, brand_list):
-        self.brand = random.choice(list(brand_list))
-        self.fuel = brand_list[self.brand]["fuel"]
-        self.strenght = brand_list[self.brand]["strenght"]
-        self.consumption = brand_list[self.brand]["consumption"]
-        brands_of_car = {
-            "BMW": {"fuel": 100, "strenght": 200, "consumption": 6}
-            "Lamborghini": {"fuel": 90, "strength": 780, "consumption": 17}
-            "Porsche": {"fuel": 110, "strenght": 330, "consumption": 11}
-            "McLaren": {"fuel": 80, "strength": 800, "consumption": 4}
-        }
+    def __init__(self, band_list):
+        self.brand = random.choice(list(band_list))
+        self.fuel = band_list[self.brand]["fuel"]
+        self.strength = band_list[self.brand]["strength"]
+        self.consumption = band_list[self.brand]["consumption"]
+
     def drive(self):
-        if self.strenght > 0 and self.fuel >= self.consumption:
+        if self.strength > 0 and self.fuel >= self.consumption:
             self.fuel -= self.consumption
-            self.strenght -= 0.5
+            self.strength -= 0.5
             return True
         else:
             print("Car cant move")
             return False
+
+
+brands_of_car = {
+            "BMW": {"fuel": 120, "strength":720, "consumption": 17},
+            "McLaren": {"fuel": 80, "strength": 800, "consumption": 4},
+            "Lamborghini": {"fuel": 90, "strength": 780, "consumption": 17},
+            "Porsche": {"fuel": 110, "strenght": 330, "consumption": 11}
+        }
+nick = Human(name = "Max")
+nick.get_car()
