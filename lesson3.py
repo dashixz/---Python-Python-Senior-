@@ -1,3 +1,4 @@
+
 class Ppl:
     def __init__(self,
                  name = "Nn",
@@ -11,3 +12,19 @@ class Ppl:
         self.job = job
         self.car = car
         self.home = home
+    def get_home(self):
+        pass
+    def get_car(self):
+        pass
+    def get_job(self):
+        pass
+    def eat(self):
+        pass
+    def work(self):
+        pass
+    def shoping(self):
+        pass
+    def chill(self):
+        pass
+    def clean_home(self):
+        pass
