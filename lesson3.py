@@ -1,5 +1,9 @@
 class Ppl:
-    def __init__(self, name = "Ppl", job = None, home = None, car = None):
+    def __init__(self,
+                 name = "Nn",
+                 job = None,
+                 home = None,
+                 car = None):
         self.name = name
         self.money = 50_000
         self.gladness = 50
