@@ -12,7 +12,7 @@ class Child(Parent):
         print(self.eyes)
         print(self.age)
 
-eric = Child()
+max = Child()
 class Human:
     height = 170
 class Student(Human):
