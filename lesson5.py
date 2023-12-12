@@ -18,6 +18,8 @@ for method in dir(info_lst):
     print(method)
 print(info_lst.__dir__)
 
+import inspect
+
 
 
 
