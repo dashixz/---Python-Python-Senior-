@@ -10,3 +10,14 @@ nick = Human
 print(requests.__name__)
 print(rq.__name__)
 print(nick.__name__)
+print(__name__)
+
+info_lst = []
+print(type(info_lst))
+for method in dir(info_lst):
+    print(method)
+print(info_lst.__dir__)
+
+
+
+
