@@ -20,6 +20,9 @@ print(info_lst.__dir__)
 
 import inspect
 
+print(inspect.ismethod(requests))
+print(inspect.isclass(Human))
+print(inspect.isfunction(requests))
 
 
 
