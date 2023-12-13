@@ -2,7 +2,7 @@ import colorama
 import inspect
 colorama.init()
 
-print(f"{colorama.Fore.RED}Цей текст червоний{colorama.Style.RESET_ALL}")
+print(f"{colorama.Fore.RED}Червоний текст{colorama.Style.RESET_ALL}")
 #Додала кольоровий текст
 
 print(f"{colorama.Back.GREEN}Зелений фон{colorama.Style.RESET_ALL}")
