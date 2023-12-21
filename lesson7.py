@@ -26,3 +26,11 @@ my_list = [1, 6, 3, 9, 5]
 my_iterator = MyIterator(my_list)
 print(my_iterator.__iter__())
 print(*my_iterator)
+#generator
+def my_generator(data):
+    for item in data:
+        yield item
+
+my_list = [1, 6, 3, 9, 5]
+my_gen = my_generator(my_list)
+print(*my_gen)
