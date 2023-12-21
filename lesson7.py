@@ -46,3 +46,17 @@ print(closure(15))
 print(closure(100))
 print(closure(5))
 
+#decorator
+def my_decorator(func):
+    def wrapper():
+        print("Starting wpapping")
+        func()
+        print("Ending wrapping")
+    return wrapper
+@my_decorator
+def my_func():
+    print("Hello!")
+
+#say_hello = my_decorator(my_func)
+#say_hello()
+my_func()
