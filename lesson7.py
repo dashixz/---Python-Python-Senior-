@@ -21,3 +21,8 @@ class MyIterator:
         value = self.data[self.index]
         self.index += 1
         return value
+
+my_list = [1, 6, 3, 9, 5]
+my_iterator = MyIterator(my_list)
+print(my_iterator.__iter__())
+print(*my_iterator)
