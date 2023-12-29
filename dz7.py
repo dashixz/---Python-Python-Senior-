@@ -1,17 +1,11 @@
-def calculator(expression, precision=2):
-    try:
-        result = eval(expression)
-        rounded_result = round(result, precision)
-        return rounded_result
-    except Exception as e:
-        print(f"Error: {e}")
-        return None
+class IterWithGen:
+    def __iter__(self):
+        return self
+    def __next__(self):
+        return (x for x in range(5))
 
-def calculate(expression):
-    return calculator(expression)
+iterator = IterWithGen()
 
-result = calculate("2 + 2")
-print(result)
-
-result = calculate("10 / 0")
-print(result)
+for gen in iterator:
+    for num in gen:
+        print(num)
